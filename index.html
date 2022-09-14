@@ -1,0 +1,109 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>lab1</title>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body style="color: white; font-family: Arial, Helvetica, sans-serif;">
+        <!-- Определяем заголовок Header -->
+        <header style="background:green; padding: 7px; font-family: 'Courier New', Courier, monospace; font-weight: lighter;" align="center"> Hello, Header!</header>
+       
+
+        <div style="background:blue; margin: 0px 380px 0px; padding: 5px 25px 0 25px; width: 470px; ">
+            <h1>Hello, content!</h1>
+        <div >
+            <!-- Задаем с помощью свойств css квадрат с закругленными 2мя углами, делаем необходимые отступы -->
+            <style>
+                p.square {
+                    width: 90px;
+                    height: 90px;
+                    background: blue;
+                    color:white;
+                    border: 5px solid white;
+                    border-radius: 20px 0px;
+                    display: inline-block;
+                    margin: 0 25px 30px 0px;
+                }
+            </style>
+             
+           <!-- Задаем положение с помощью float: left , чтобы текст находился справа и огибал квадрат -->
+             <p class="square" style="float: left;" >
+            </p>
+            <p >
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</br>printer<wbr> took a galley of type and scrambled it </br>to make a type specimen book. It has</br> survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </br>unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus</br> PageMaker including versions of Lorem Ipsum.
+            </p>
+          
+            
+
+         <!-- Ссылка, ставим по центру изменяя тип тега на блочный -->
+            <style>
+                a:active {color:read;text-decoration:underline}
+            </style>
+            <a href="https://csd.tsu.ru/" style="color:red; display: block;"align="center">www.csd.tsu.ru</a>
+            
+             <!--Список с пунктами-точками -->
+            <style>
+                li{margin-bottom: 5px;}
+            </style>
+            <h2 style="word-spacing: 15px; margin: 10px 0 -10px 0;"><span style="color:red; ">Here</span> is the list:</h2>
+            <ul style="list-style-type: disc;">
+                <li class="font" >Value 1</li>
+                <li class="font" style="color:aqua; letter-spacing: 6px;">Value 2</li>
+                <li class="font">Value 3</li>
+            </ul>
+
+             <!-- Таблица, в правом нижнем углу. Обводка, как таблицы так и ячеек по отдельности, совмещение некоторых ячеек меж собой -->
+            <style>
+                table{ border: 1px solid white; }
+                td{padding: 5px 15px; border: 1px solid white;}
+            </style>
+            <aside style="float:right;" >
+                <table >
+                    <tr>
+                        <td rowspan="2"; style="background:green;" >1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td colspan="2"; style="background:red; ">7</td>
+                    </tr>
+                   
+                </table>
+
+                 <!-- Изображение, расположенное относительно таблицы ниже справа  -->
+                <img src="images.png" alt="Like" style="float:right; margin: 10px 0;"/>
+            </aside>
+
+
+             <!-- Работа со шрифтами -->
+            <style>
+                div.font { margin: 10px 0px;}
+          
+            </style>
+            <h3>Here are some visual styles:</h3>
+          
+            <div style="margin: -10px 0px 0px 0px;"><i>Italic</i></div>
+            <div class="font"><b>Bold</b></div>
+            <div class="font"><u>UnderLined</u></div>
+            <div style="padding: 0px 0px 20px 0px;"><del>Line through</del></div>
+        
+            
+       
+        </div>
+
+    </div>
+		
+        <footer style="background:green; padding: 5px;font-family: Arial, Helvetica, sans-serif;margin: -10px 0px 0px 0px;" align="center">Hello, Footer!</footer>
+	</body>
+</html>
